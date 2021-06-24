@@ -1,0 +1,161 @@
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 400;
+}
+
+body{
+    margin: 0;
+    height: 86%;
+}
+
+/* Navigation Bar*/
+
+#nav {
+    height: 13%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+
+#navbttn {
+    float: right;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 3%;
+    width: 100%;
+    position: fixed;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+nav a {
+    float: right;
+    text-decoration: none;
+    color: black;
+    margin-left: 3%;
+}
+
+#git{
+    float: right;
+    margin-right: 0;
+}
+
+#home {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.07rem;
+    margin-top: -0.06%;
+    color: rgb(111,185,208);
+}
+
+#logo{
+    float: left;
+    height: 16%;
+    width: auto;
+    position: fixed;
+    left: 2.4%;
+    top: 0;
+}
+
+
+/* Main Body */
+
+#main{
+    margin-top: 7%;
+    }
+
+#luka {
+    height: auto;
+    width: 39%;
+    float: right;
+    position: relative;
+    margin-right: 10%;
+    top: 4.3%;
+    margin-top: 6%
+}
+
+#homet {
+    float: left;
+    height: auto;
+    width: 30%;
+    position: relative;
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: 'Fjalla One', sans-serif;
+    top: 17.8%;
+    margin-left: 10%;
+    margin-top: 16%;
+}
+
+.red{
+    color: rgb(236, 28, 36);
+}
+
+/* Social Media */
+
+#social {
+    height: 12.38%;
+    position: relative;
+    padding: 9.3% 0 4.65% 0;
+    float:left;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+#face {
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.78rem;
+    padding: 0.8% 1.1%;
+    margin-right: 0.1%;
+}
+
+#ins {
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    font-size: 2rem;
+    padding: 0.6% 0.8%;
+    margin-left: 1%;
+
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(111,185,208);
+    height: 20%;
+    position: relative;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+#copyrite {
+    float: left;
+    position: relative;
+    opacity: 0.6;
+    margin: 2%;
+    margin-top: 2.4%;
+    background-color: rgb(111,185,208);
+    text-align: left;
+}
+
+#ack {
+    text-align: right;
+    width: 54%;
+    height: 15%;
+    float: right;
+    margin: 2%;
+    opacity: 0.6;
+    background-color: rgb(111,185,208)
+}
