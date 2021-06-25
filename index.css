@@ -67,10 +67,13 @@ a{
 }
 
 .navButtonSelected {
+    float: right;
+    text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 1.07rem;
     margin-top: -0.06%;
+    margin-left: 3%;
     color: rgb(111,185,208);
 }
 
