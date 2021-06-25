@@ -1,5 +1,5 @@
 
-/*Home Page*/
+/*All pages*/
 html {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
@@ -17,21 +17,8 @@ a{
     color: white;
 }
 
-.fa {
-    padding: 15px 5px;
-    font-size: 2rem;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 2px 0;
-    background-color: black;
-    border-radius: 50%;
-  }
   
-  .fa:hover {
-      opacity: 0.7;
-  }
-/* Navigation Bar*/
+/* All Pages Navigation Bar*/
 
 #nav {
     height: 13%;
@@ -86,55 +73,7 @@ a{
     top: 0;
 }
 
-
-/* Main Body */
-
-#main{
-    margin-top: 7%;
-    }
-
-#luka {
-    height: auto;
-    width: 39%;
-    float: right;
-    display: flex;
-    position: relative;
-    margin-right: 10%;
-    top: 4.3%;
-    margin-top: 6%
-}
-
-#homet {
-    float: left;
-    height: auto;
-    width: 30%;
-    position: relative;
-    font-size: 2.5rem;
-    text-align: left;
-    font-family: 'Fjalla One', sans-serif;
-    top: 17.8%;
-    margin-left: 10%;
-    margin-top: 16%;
-}
-
-.red{
-    color: rgb(236, 28, 36);
-}
-
-/* Social Media */
-
-#social {
-    height: 12.38%;
-    position: relative;
-    padding: 9.3% 0 3% 0;
-    font-size: 2rem;
-    float:left;
-    clear: both;
-    text-align: center;
-    width: 100%;
-}
-
-/* Footer */
+/* All Pages Footer */
 
 footer {
     background-color: rgb(111,185,208);
@@ -167,6 +106,69 @@ footer {
     background-color: rgb(111,185,208)
 }
 
+
+/* Home page Main Body */
+
+#homePageMain{
+    margin-top: 7%;
+    }
+
+#luka {
+    height: auto;
+    width: 39%;
+    float: right;
+    display: flex;
+    position: relative;
+    margin-right: 10%;
+    top: 4.3%;
+    margin-top: 6%
+}
+
+#homet {
+    float: left;
+    height: auto;
+    width: 30%;
+    position: relative;
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: 'Fjalla One', sans-serif;
+    top: 17.8%;
+    margin-left: 10%;
+    margin-top: 16%;
+}
+
+.red{
+    color: rgb(236, 28, 36);
+}
+
+/* Home Page Social Media */
+
+#social {
+    height: 12.38%;
+    position: relative;
+    padding: 9.3% 0 3% 0;
+    font-size: 2rem;
+    float:left;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+.fa {
+    padding: 15px 5px;
+    font-size: 2rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Home Page desktop screens */
 @media only screen and (min-width: 1281px) {
     html{
         font-size: 18px;
