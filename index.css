@@ -17,11 +17,15 @@ a{
     color: white;
 }
 
+.hidden{
+    display: none;
+}
+
   
 /* All Pages Navigation Bar*/
 
 #nav {
-    height: 13%;
+    height: 100px;
     width: 100%;
     left: 0;
     top: 0;
@@ -66,8 +70,8 @@ a{
 
 #logo{
     float: left;
-    height: 16%;
-    width: auto;
+    height: auto;
+    width: 120px;
     position: fixed;
     left: 2.4%;
     top: 0;
@@ -109,7 +113,7 @@ footer {
 
 /* Home page Main Body */
 
-#homePageMain{
+#homePageMainContent{
     margin-top: 7%;
     }
 
