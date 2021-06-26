@@ -27,7 +27,7 @@
 /* All Pages Navigation Bar*/
 
     #nav {
-        height: 100px;
+        height: 90px;
         width: 100%;
         left: 0;
         top: 0;
@@ -73,10 +73,10 @@
     #logo{
         float: left;
         height: auto;
-        width: 120px;
+        width: 100px;
         position: fixed;
         left: 2.4%;
-        top: 0;
+        top: 1px;
     }
 
 /* All Pages Footer */
@@ -183,18 +183,10 @@
     }
 
 
-/* Home Page desktop screens */
-    @media only screen and (min-width: 1281px) {
-        html{
-            font-size: 18px;
-    }
-        .fa{
-            padding: 20px 16px
-        }
-    }
+
 /* What We Do Page Body */
 #whatcanwedo {
-    margin-top: 14.5%;
+    margin-top: 225px;
     margin-bottom: 6%;
     font-size: 2rem;
     clear: both;
@@ -327,9 +319,10 @@ h2 {
     height: 30%;
     float: left;
     position: relative;
-    margin-top: 6%;
-    margin-bottom: -0.5%;
+    margin-top: 10%;
+    margin-bottom: -3px;
     left: 0;
+    right: 0;
 }
 
 #bsheader{
@@ -496,4 +489,22 @@ h2 {
         opacity: 0.7;
     }
 
+/* Desktop screens */
+    @media only screen and (min-width: 1281px) {
+        html{
+            font-size: 18px;
+    }
+        .fa{
+            padding: 20px 16px
+        }
+
+        #nav{
+            height: 125px;
+        }
+
+        #logo{
+            width: 150px;
+        }
+        
+    }
 
