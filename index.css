@@ -1,240 +1,321 @@
 
 /*All pages*/
-html {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    margin: 0;
-    font-weight: 400;
-}
+    html {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        margin: 0;
+        font-weight: 400;
+    }
 
-body{
-    margin: 0;
-    height: 86%;
-}
+    body{
+        margin: 0;
+        height: 86%;
+    }
 
-a{
-    text-decoration: none;
-    color: white;
-}
+    .hidden{
+        display: none;
+    }
 
-.hidden{
-    display: none;
-}
+    a{
+        text-decoration: none;
+    }
+    a:active{
+        text-decoration: none;
+    }
 
-  
+    
 /* All Pages Navigation Bar*/
 
-#nav {
-    height: 100px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: fixed;
-    z-index: 100;
-    background-color: white;
-}
+    #nav {
+        height: 100px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        z-index: 100;
+        background-color: white;
+    }
 
-#navbttn {
-    float: right;
-    right: 0;
-    margin-top: 4%;
-    margin-right: 3%;
-    width: 100%;
-    position: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    #navbttn {
+        float: right;
+        right: 0;
+        margin-top: 4%;
+        margin-right: 3%;
+        width: 100%;
+        position: fixed;
+        font-family: 'Ubuntu', sans-serif;
 
-}
+    }
 
-.navButton {
-    float: right;
-    text-decoration: none;
-    color: black;
-    margin-left: 3%;
-}
+    .navButton {
+        float: right;
+        text-decoration: none;
+        color: black;
+        margin-left: 3%;
+    }
 
-#git{
-    float: right;
-    margin-right: 0;
-}
+    #git{
+        float: right;
+        margin-right: 0;
+    }
 
-.navButtonSelected {
-    float: right;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 1.07rem;
-    margin-top: -0.06%;
-    margin-left: 3%;
-    color: rgb(111,185,208);
-}
+    .navButtonSelected {
+        float: right;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 1.07rem;
+        margin-top: -0.06%;
+        margin-left: 3%;
+        color: rgb(111,185,208);
+    }
 
-#logo{
-    float: left;
-    height: auto;
-    width: 120px;
-    position: fixed;
-    left: 2.4%;
-    top: 0;
-}
+    #logo{
+        float: left;
+        height: auto;
+        width: 120px;
+        position: fixed;
+        left: 2.4%;
+        top: 0;
+    }
 
 /* All Pages Footer */
 
-footer {
-    background-color: rgb(111,185,208);
-    height: 20%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    clear: both;
-    width: 100%;
-    float: left;
-}
+    footer {
+        background-color: rgb(111,185,208);
+        height: 20%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        clear: both;
+        width: 100%;
+        float: left;
+    }
 
-#copyrite {
-    float: left;
-    position: relative;
-    opacity: 0.6;
-    margin: 2%;
-    margin-top: 2.4%;
-    background-color: rgb(111,185,208);
-    text-align: left;
-}
+    #copyrite {
+        float: left;
+        position: relative;
+        opacity: 0.6;
+        margin: 2%;
+        margin-top: 2.4%;
+        background-color: rgb(111,185,208);
+        text-align: left;
+    }
 
-#ack {
-    text-align: right;
-    width: 54%;
-    height: 15%;
-    float: right;
-    margin: 2%;
-    opacity: 0.6;
-    background-color: rgb(111,185,208)
-}
+    #ack {
+        text-align: right;
+        width: 54%;
+        height: 15%;
+        float: right;
+        margin: 2%;
+        opacity: 0.6;
+        background-color: rgb(111,185,208)
+    }
 
 
 /* Home page Main Body */
 
-#homePageMainContent{
-    margin-top: 7%;
+    #homePageMainContent{
+        margin-top: 7%;
+        }
+
+    #luka {
+        height: auto;
+        width: 39%;
+        float: right;
+        display: flex;
+        position: relative;
+        margin-right: 10%;
+        top: 4.3%;
+        margin-top: 6%
     }
 
-#luka {
-    height: auto;
-    width: 39%;
-    float: right;
-    display: flex;
-    position: relative;
-    margin-right: 10%;
-    top: 4.3%;
-    margin-top: 6%
-}
+    #homet {
+        float: left;
+        height: auto;
+        width: 30%;
+        position: relative;
+        font-size: 2.5rem;
+        text-align: left;
+        font-family: 'Fjalla One', sans-serif;
+        top: 17.8%;
+        margin-left: 10%;
+        margin-top: 16%;
+    }
 
-#homet {
-    float: left;
-    height: auto;
-    width: 30%;
-    position: relative;
-    font-size: 2.5rem;
-    text-align: left;
-    font-family: 'Fjalla One', sans-serif;
-    top: 17.8%;
-    margin-left: 10%;
-    margin-top: 16%;
-}
-
-.red{
-    color: rgb(236, 28, 36);
-}
+    .red{
+        color: rgb(236, 28, 36);
+    }
 
 /* Home Page Social Media */
 
-#social {
-    height: 12.38%;
-    position: relative;
-    padding: 9.3% 0 3% 0;
-    font-size: 2rem;
-    float:left;
-    clear: both;
-    text-align: center;
-    width: 100%;
-}
-.fa {
-    padding: 15px 5px;
-    font-size: 2rem;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 2px 0;
-    background-color: black;
-    border-radius: 50%;
-  }
-  .fa:hover {
-    opacity: 0.7;
-}
+    #social {
+        height: 12.38%;
+        position: relative;
+        padding: 9.3% 0 3% 0;
+        font-size: 2rem;
+        float:left;
+        clear: both;
+        text-align: center;
+        width: 100%;
+    }
+
+    a.socials{
+        color: white;
+    }
+
+    a.socials:active{
+        color: white;
+        text-decoration: none;
+    }
+    .fa {
+        padding: 15px 5px;
+        font-size: 2rem;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2px 0;
+        background-color: black;
+        border-radius: 50%;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
 
 
 /* Home Page desktop screens */
-@media only screen and (min-width: 1281px) {
-    html{
-        font-size: 18px;
-}
-    .fa{
-        padding: 20px 16px
+    @media only screen and (min-width: 1281px) {
+        html{
+            font-size: 18px;
     }
-}
+        .fa{
+            padding: 20px 16px
+        }
+    }
 
 /* Why Page Main Body */
 
-#whyPageContainer{
-    margin-top: 200px
-}
+    #whyPageContainer{
+        margin-top: 200px
+    }
 
-#because {
-    margin-top: 9.2%;
-    margin-bottom: 6%;
-    font-size: 2rem;
-    clear: both;
-    text-align: center;
-    font-family: 'Fjalla One', sans-serif;
-}
+    #because {
+        margin-top: 9.2%;
+        margin-bottom: 6%;
+        font-size: 2rem;
+        clear: both;
+        text-align: center;
+        font-family: 'Fjalla One', sans-serif;
+    }
 
-#pic {
-    height: auto;
-    width: 27%;
-    float: left;
-    position: relative;
-    left: 10%;
-    margin-top: 1.8%;
-    clear: left;
-}
+    #pic {
+        height: auto;
+        width: 27%;
+        float: left;
+        position: relative;
+        left: 10%;
+        margin-top: 1.8%;
+        clear: left;
+    }
 
-#red {
-    color: rgb(236,28,36)
-}
+    #red {
+        color: rgb(236,28,36)
+    }
 
-#info {
-    float: right;
-    width: 56%;
-    text-align: left;
-    margin-right: 3.5%;
-    margin-bottom: 5%;
-}
+    #info {
+        float: right;
+        width: 56%;
+        text-align: left;
+        margin-right: 3.5%;
+        margin-bottom: 5%;
+    }
 
-h4 {
-    font-size: 1.2rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight:300;
-    margin-bottom: 4%;
-    opacity: 0.7;
-    margin-top: 2.8%;
-}
+    h4 {
+        font-size: 1.2rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight:300;
+        margin-bottom: 4%;
+        opacity: 0.7;
+        margin-top: 2.8%;
+    }
 
-p {
-    font-size: 1rem;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 4%;
-    font-weight:300;
-    opacity: 0.7;
+    p {
+        font-size: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        margin-bottom: 4%;
+        font-weight:300;
+        opacity: 0.7;
 
-}
+    }
+
+/* Get in touch page */
+
+    #howcan {
+        margin-top: 14.5%;
+        margin-bottom: 6%;
+        font-size: 2rem;
+        clear: both;
+        text-align: center;
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+    #form{
+        position: relative;
+        clear: both;
+        display: block;
+
+    }
+
+    textarea {
+        border: white 0px solid;
+        resize: none;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(231, 230, 230);
+        margin-top: 1%;
+        margin-left: 21%;
+        margin-right: 21%;
+        padding-top: 0.7%;
+        padding-bottom: 0.7%;
+    }
+
+
+    #send {
+        margin-top: 2%;
+        display: block;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: rgb(111,185,208);
+        color: white;
+        padding: 1% 2% 1% 2%;
+        border-radius: 0.5%;
+        border: rgb(111,185,208) 1px solid;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #formSubmit {
+        text-align: centre;
+        margin-left: 50%;
+        margin-right: 50%;
+        }
+
+    #nbhEmail{
+            color: black;
+        }
+
+    #nbhEmail:active{
+        color: black;
+    }
+
+
+    #pickle {
+        position: relative;
+        text-align: center;
+        margin-top: 5%;
+        clear: both;
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
 
 
