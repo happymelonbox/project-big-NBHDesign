@@ -371,7 +371,7 @@ h2 {
     }
 
     #because {
-        margin-top: 9.2%;
+        margin-top: 225px;
         margin-bottom: 6%;
         font-size: 2rem;
         clear: both;
@@ -422,7 +422,7 @@ h2 {
 /* Get in touch page */
 
     #howcan {
-        margin-top: 14.5%;
+        margin-top: 225px;
         margin-bottom: 6%;
         font-size: 2rem;
         clear: both;
@@ -443,8 +443,9 @@ h2 {
         font-family: 'Ubuntu', sans-serif;
         background-color: rgb(231, 230, 230);
         margin-top: 1%;
-        margin-left: 21%;
-        margin-right: 21%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         padding-top: 0.7%;
         padding-bottom: 0.7%;
     }
@@ -505,6 +506,22 @@ h2 {
         #logo{
             width: 150px;
         }
-        
+        #whatcanwedo{
+            margin-top: 270px;
+        }
+
+        #contact-form{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        #howcan{
+            margin-top: 270px
+        }
+
+        #because{
+            margin-top: 270px;
+        }
     }
 
