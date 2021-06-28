@@ -31,5 +31,6 @@ $message = filter_var($message, FILTER_SANITIZE_STRING);
         } else {
             echo "failed!";
         };
+        header('Location: /index.html')
 
 ?>
