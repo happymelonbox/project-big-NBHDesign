@@ -7,7 +7,7 @@ function loadPage(){
     navButtonClick()
     gitBut()
     fetchInsta()
-    submitForm()
+    // submitForm()
 }
 function navButtonClick(){
     let navButton = document.querySelectorAll('a.navButton')
@@ -82,20 +82,20 @@ function displayInsta(feed){
     instaImg.setAttribute('alt', 'Image from Instagram')
 }}
 
-function submitForm(){
-    const contactForm = document.getElementById('send')
-    contactForm.addEventListener('submit', function(event){
-        event.preventDefault()
-        const data = JSON.stringify({ name: this.state.name, email: this.state.emailInput, message: this.state.message })
-        fetch('/assets/contact.php', {
-          method: 'POST',
-          body: data
-        }).then((response) => {
-          if (response.ok) {
-            this.setState({ success: true })
-          }
-        })
-    })
-}
+// function submitForm(){
+//     const contactForm = document.getElementById('send')
+//     contactForm.addEventListener('submit', function(event){
+//         event.preventDefault()
+//         const data = JSON.stringify({ name: this.state.name, email: this.state.emailInput, message: this.state.message })
+//         fetch('/assets/contact.php', {
+//           method: 'POST',
+//           body: data
+//         }).then((response) => {
+//           if (response.ok) {
+//             this.setState({ success: true })
+//           }
+//         })
+//     })
+// }
 
 

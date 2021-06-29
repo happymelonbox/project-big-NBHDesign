@@ -512,7 +512,13 @@ h2 {
     #nbhEmail:active{
         color: black;
     }
-
+    #inAPickle{
+        font-size: 1.2rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        margin-bottom: 4%;
+        opacity: 0.7;
+    }
 
     #pickle {
         position: relative;
