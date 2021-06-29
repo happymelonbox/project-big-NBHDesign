@@ -2,7 +2,7 @@
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
 
-$myemail = 'nat@nbhdesign.com.au';
+$myemail = 'howes.j.j@gmail.com';
 
 $name = $_REQUEST["name"];
 
@@ -22,7 +22,7 @@ $message = $_REQUEST["message"];
     $headers = "From: " . $myemail;
     if(mail($to,$subject,$message, $headers)){
     echo "Thanks for contacting us.";
-    header('Location: /index.html/getintouch.html/getintouchthanks.html');
+    header('Location: index.html');
     };
 
 exit();
