@@ -63,7 +63,9 @@ function clickGitBut(){
 }
 
 function fetchInsta(){
-    const accessToken = 'IGQVJWbkUzQ21BaXB6VlFxTHJKYXVlUWU3NDhtVGpmODNOdWxEU0d3VXhZAVi1mWk13SU1oSXIxNVhkOTVxNjQ4OTdlMVVjZAHJpZAURLZAk1EN0hRV0loNllzN1dlNU1lMzFoaXN2YU93'
+    //normally this token WOULD NOT be saved in code. It is a serious security risk and is advised against.
+    //I have created a fake account with fake details for this.
+    const accessToken = 'IGQVJXQm5hdVRTbmN3SDlORHhXMDMyNExscFZAWVlFLd0k5OGp6NE50T01feG4tUVUxMzAzVXJyQ0tDbFYycXFUN2lXMnZAobmVEZAllaSFVhN1R1RUlHdzdWRnlUYkFRa1FTX0tmdGpB'
     fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=${accessToken}`)
     .then(resp=>resp.json())
     .then(data=>displayInsta(data))

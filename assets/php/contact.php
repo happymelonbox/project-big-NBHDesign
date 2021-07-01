@@ -21,7 +21,7 @@ $message = $_REQUEST["message"];
     $email_address;
     $headers = "From: " . $myemail;
     if(mail($to,$subject,$message, $headers)){
-    echo "Thanks for contacting us.";
+    echo "Thanks for contacting us. We will get back to you as soon as possible";
     header('Location: index.html');
     };
 
