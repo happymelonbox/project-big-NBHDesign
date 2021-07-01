@@ -564,3 +564,29 @@ h2 {
         }
     }
 
+/* Screen sizes smaller than 875px wide */
+    @media only screen and (max-width: 875px){
+
+    /* All pages footer */
+        footer {
+            text-align: center;
+        }
+
+        #copyrite {
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            float: none;
+        }
+
+        #ack {
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+    }
