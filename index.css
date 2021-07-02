@@ -80,8 +80,9 @@
     }
 
     #mobileNav{
-        visibility: hidden;
+        display: none;
     }
+
 
 /* All Pages Footer */
 
@@ -249,7 +250,6 @@ h2 {
     margin-left: 4%;
     height: 56%;
     clear:both;
-
 }
 
 #di {
@@ -569,7 +569,7 @@ h2 {
     }
 
 /* Screen sizes smaller than 875px wide */
-    @media only screen and (max-width: 875px){
+    @media only screen and (min-width: 700px) and (max-width: 875px){
 
     /* All pages footer */
         footer {
@@ -595,15 +595,79 @@ h2 {
 
     /* Mobile Navigation */
         #nav{
-        visibility: hidden;
+        display: none;
         }
 
         #mobileNav{
-        visibility: visible;
+        display: block;
+        position: fixed;
         float: right;
+        width: 100%;
+        height: 90px;
+        background-color: white;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
         }
-        .myLinksLi {
+
+        #myLinks{
+            float: right;
+            clear: both;
+            width: 140px;
+            background-color: white;
+            display: block;
+            margin-right: 65px;
+        }
+        .myLinks {
             list-style-type: none;
+            width: 100%;
+            text-align: right;
+            color: rgb(111,185,208);
+            /* display: none; */
         }
-        
+        .myLinks:active {
+            list-style-type: none;
+            width: 100%;
+            text-align: right;
+            color: rgb(111,185,208);
+            /* display: none; */
+        }
+        #bars{
+            background-color: white;
+            padding: 0;
+            font-size: 20px;
+            margin: 50px 50px 5px 0px;
+            display: block;
+            color: rgb(111,185,208);
+            float: right;
+        }
+
+        .navButtonSelectedMob{
+            float: right;
+            text-decoration: none;
+            list-style-type: none;
+            width: 100%;
+            font-family: 'Ubuntu', sans-serif;
+            clear: both;
+            font-weight: bold;
+            /* font-size: 1.07rem; */
+            margin-top: -0.06%;
+            right: 0;
+            margin-left: 20px;
+            color: rgb(111,185,208);
+            cursor: pointer;
+            text-align: right;
+        }
+
+    /* Home Page Mobile */
+
+    #luka{
+        top: 30px;
+    }
+
+    #homet{
+        font-size: 2rem;
+    }
+
     }

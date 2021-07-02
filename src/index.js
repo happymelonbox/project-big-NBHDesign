@@ -5,10 +5,9 @@ function loadPage(){
     let isClicked
 
     navButtonClick()
+    navButtonClickMobile()
     gitBut()
     fetchInsta()
-    
-    // submitForm()
 }
 function navButtonClick(){
     let navButton = document.querySelectorAll('a.navButton')
@@ -39,6 +38,40 @@ function changeNavDisplay(element){
             previouslySelected = previouslySelected[i]
         }}
         element.setAttribute('class', 'navButtonSelected')
+        changeDisplay(element, previouslySelected)
+        isClicked = false
+    }
+}
+
+function navButtonClickMobile(){
+    let mobNavButton = document.querySelectorAll('.myLinks')
+    for(let i=0;i<mobNavButton.length;i++){
+        let eachMobNavButton = mobNavButton[i]
+        eachMobNavButton.style.cursor = "pointer"
+        let home = document.getElementById('home')
+        // let why = document.getElementById('why')
+        // let git = document.getElementById('git')
+        // let whatWeDo = document.getElementById('whatwedo')
+        // let whatWeveDone = document.getElementById('whatwevedone')
+        isClicked = false
+        eachMobNavButton.addEventListener('click', function(){
+            changeNavDisplayMobile(mobNavButton[i])
+        })
+        home.setAttribute('class', 'navButtonSelectedMob')
+    }
+}
+
+function changeNavDisplayMobile(element){
+    isClicked = true
+    if(isClicked){
+        let previouslySelected = document.querySelectorAll('.navButtonSelectedMob')
+        for(i=0;i<previouslySelected.length;i++){
+            if (previouslySelected[i] != element){
+            previouslySelected[i].removeAttribute('class', 'navButtonSelectedMob')
+            previouslySelected[i].setAttribute('class', 'myLinks')
+            previouslySelected = previouslySelected[i]
+        }}
+        element.setAttribute('class', 'navButtonSelectedMob')
         changeDisplay(element, previouslySelected)
         isClicked = false
     }
