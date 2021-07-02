@@ -7,6 +7,7 @@ function loadPage(){
     navButtonClick()
     gitBut()
     fetchInsta()
+    
     // submitForm()
 }
 function navButtonClick(){

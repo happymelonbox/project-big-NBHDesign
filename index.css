@@ -79,6 +79,10 @@
         top: 1px;
     }
 
+    #mobileNav{
+        visibility: hidden;
+    }
+
 /* All Pages Footer */
 
     footer {
@@ -589,4 +593,17 @@ h2 {
             float: none;
         }
 
+    /* Mobile Navigation */
+        #nav{
+        visibility: hidden;
+        }
+
+        #mobileNav{
+        visibility: visible;
+        float: right;
+        }
+        .myLinksLi {
+            list-style-type: none;
+        }
+        
     }
