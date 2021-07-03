@@ -1,14 +1,16 @@
 
 document.addEventListener('DOMContentLoaded', function(){loadPage()})
+
 function loadPage(){
-
-    let isClicked
-
     navButtonClick()
     navButtonClickMobile()
     gitBut()
     fetchInsta()
+
+    // Mobile
+    mobileBars()
 }
+
 function navButtonClick(){
     let navButton = document.querySelectorAll('a.navButton')
     for(let i=0;i<navButton.length;i++){
@@ -28,7 +30,7 @@ function navButtonClick(){
 }
 
 function changeNavDisplay(element){
-    isClicked = true
+    let isClicked = true
     if(isClicked){
         let previouslySelected = document.querySelectorAll('.navButtonSelected')
         for(i=0;i<previouslySelected.length;i++){
@@ -43,45 +45,13 @@ function changeNavDisplay(element){
     }
 }
 
-function navButtonClickMobile(){
-    let mobNavButton = document.querySelectorAll('.myLinks')
-    for(let i=0;i<mobNavButton.length;i++){
-        let eachMobNavButton = mobNavButton[i]
-        eachMobNavButton.style.cursor = "pointer"
-        let home = document.getElementById('home')
-        // let why = document.getElementById('why')
-        // let git = document.getElementById('git')
-        // let whatWeDo = document.getElementById('whatwedo')
-        // let whatWeveDone = document.getElementById('whatwevedone')
-        isClicked = false
-        eachMobNavButton.addEventListener('click', function(){
-            changeNavDisplayMobile(mobNavButton[i])
-        })
-        home.setAttribute('class', 'navButtonSelectedMob')
-    }
-}
-
-function changeNavDisplayMobile(element){
-    isClicked = true
-    if(isClicked){
-        let previouslySelected = document.querySelectorAll('.navButtonSelectedMob')
-        for(i=0;i<previouslySelected.length;i++){
-            if (previouslySelected[i] != element){
-            previouslySelected[i].removeAttribute('class', 'navButtonSelectedMob')
-            previouslySelected[i].setAttribute('class', 'myLinks')
-            previouslySelected = previouslySelected[i]
-        }}
-        element.setAttribute('class', 'navButtonSelectedMob')
-        changeDisplay(element, previouslySelected)
-        isClicked = false
-    }
-}
-
 function changeDisplay(button, page){
     let currentId = button.id
     let previousPage = page.id
+    if(currentId != previousPage){
     document.getElementById(`${currentId}PageContainer`).removeAttribute('class', 'hidden')
     document.getElementById(`${previousPage}PageContainer`).setAttribute('class', 'hidden')
+    }
 }
 
 function gitBut(){
@@ -116,7 +86,69 @@ function displayInsta(feed){
     instaImg.setAttribute('src', `${eachImg}`)
     instaImg.setAttribute('class', 'instaImg')
     instaImg.setAttribute('alt', 'Image from Instagram')
-}}
+}
+}
+
+// Mobile functions
+
+function navButtonClickMobile(){
+    let mobNavButton = document.querySelectorAll('.myLinks')
+    for(let i=0;i<mobNavButton.length;i++){
+        let eachMobNavButton = mobNavButton[i]
+        eachMobNavButton.style.cursor = "pointer"
+        let home = document.getElementById('home-mob')
+        isClicked = false
+        eachMobNavButton.addEventListener('click', function(){
+            changeNavDisplayMobile(mobNavButton[i])
+        })
+        home.setAttribute('class', 'navButtonSelectedMob')
+    }
+}
+
+function changeNavDisplayMobile(element){
+    let isClicked = true
+    let newElement = element.id.split('-')
+    if(isClicked){
+        let previouslySelected = document.querySelectorAll('.navButtonSelectedMob')
+        for(i=0;i<previouslySelected.length;i++){
+            if (previouslySelected[i] != newElement){
+            previouslySelected[i].removeAttribute('class', 'navButtonSelectedMob')
+            previouslySelected[i].setAttribute('class', 'myLinks')
+            previouslySelected = previouslySelected[i]
+        }}
+        element.setAttribute('class', 'navButtonSelectedMob')
+        changeDisplayMob(element, previouslySelected)
+        isClicked = false
+    }
+}
+function changeDisplayMob(button, page){
+    let buttonSplit = button.id.split('-')
+    let currentId = buttonSplit[0]
+    let pageSplit = page.id.split('-')
+    let previousPage = pageSplit[0]
+    if(currentId != previousPage){
+    document.getElementById(`${currentId}PageContainer`).removeAttribute('class', 'hidden')
+    document.getElementById(`${previousPage}PageContainer`).setAttribute('class', 'hidden')
+    }
+}
+
+function mobileBars(){
+    const bars = document.getElementById('bars')
+    const mobileNavLinks = document.getElementById('myLinks')
+    mobileNavLinks.style.display ='none'
+    bars.addEventListener('click', function(){
+        toggleMobileNav(mobileNavLinks)})
+}
+
+function toggleMobileNav(element){
+    if (element.style.display === 'none'|| element.style.display === 'undefined'){
+        element.style.display = 'block'
+    } else if (element.style.display === 'block'){
+        element.style.display = 'none'
+    }
+}
+
+
 
 // function submitForm(){
 //     const contactForm = document.getElementById('send')
@@ -133,5 +165,3 @@ function displayInsta(feed){
 //         })
 //     })
 // }
-
-
